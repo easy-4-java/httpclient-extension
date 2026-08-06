@@ -9,7 +9,7 @@
 
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Pure Java extensions for Apache HttpClient 4.x.</description>
-    <developers>
+        <developers>
         <developer>
             <name>Loong Wan</name>
             <email>hiwepy@gmail.com</email>
