@@ -2,6 +2,8 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
+[![Java](https://img.shields.io/badge/Java-21-orange)](https://github.com/easy-4-java/httpclient-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+
 Pure Java extensions for Apache HttpClient 4.x — connection manager builder, retry handler, request/response interceptors, SSL utilities and common DTOs. No Spring Boot auto-configuration in this module.
 
 ## Table of Contents
