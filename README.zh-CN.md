@@ -2,14 +2,11 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-![Java](https://img.shields.io/badge/Java-17-orange) ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
-
 Apache HttpClient 4.x 的纯 Java 扩展层 — 连接管理器 builder、重试处理器、请求/响应拦截器、SSL 工具与通用 DTO。本模块不含 Spring Boot 自动配置。
 
-<a id="1-project-overview"></a>
 ## 目录
 
-- [1. 项目概览](#1-project-overview)
+- [1. 项目概览](#1-项目概览)
 - [2. 功能与状态](#2-features--status)
 - [3. 环境要求与兼容性](#3-requirements--compatibility)
 - [4. 架构与模块](#4-architecture--modules)
