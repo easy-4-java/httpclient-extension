@@ -13,8 +13,38 @@ import org.apache.http.client.entity.DeflateDecompressingEntity;
 import org.apache.http.client.entity.GzipDecompressingEntity;
 import org.apache.http.protocol.HttpContext;
 
+/**
+ * {@link HttpResponseInterceptor} that transparently wraps
+ * {@code gzip} and {@code deflate} encoded response entities with a
+ * decompressing counterpart.
+ *
+ * <p>The interceptor inspects the {@code Content-Encoding} header of every
+ * incoming response and, when it contains a {@code gzip} or {@code deflate}
+ * entry, replaces the response entity with the corresponding
+ * {@link GzipDecompressingEntity} or {@link DeflateDecompressingEntity}.
+ * Other encodings (or a missing entity, or a missing
+ * {@code Content-Encoding} header) are left untouched.</p>
+ *
+ * <p>The first matching codec wins &mdash; if a response advertises both
+ * encodings, {@code gzip} is preferred because it is the first one checked.</p>
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see HttpResponseInterceptor
+ * @see GzipDecompressingEntity
+ * @see DeflateDecompressingEntity
+ */
 public class HttpResponseGzipInterceptor implements HttpResponseInterceptor {
 
+	/**
+	 * Walks the response entity's {@code Content-Encoding} header and wraps
+	 * the entity in a decompressing counterpart when applicable.
+	 *
+	 * @param response the current response.
+	 * @param context the current execution context (unused).
+	 * @throws HttpException never thrown by this implementation; declared for compatibility.
+	 * @throws IOException never thrown by this implementation; declared for compatibility.
+	 */
 	@Override
 	public void process(HttpResponse response, HttpContext context) throws HttpException, IOException {
 		HttpEntity entity = response.getEntity();
