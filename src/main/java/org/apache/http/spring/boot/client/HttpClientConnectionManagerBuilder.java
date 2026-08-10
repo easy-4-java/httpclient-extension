@@ -37,7 +37,7 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
  * method is {@code protected} for the same reason &mdash; tests and subclasses
  * can override it to substitute a custom connection manager implementation.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see PoolingHttpClientConnectionManager
  * @see ConnectionConfig

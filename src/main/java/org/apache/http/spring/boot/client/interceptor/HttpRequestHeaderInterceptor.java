@@ -26,7 +26,7 @@ import org.apache.http.protocol.HttpContext;
  * <p>The interceptor is stateless after construction and therefore safe to
  * share between threads.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see HttpRequestInterceptor
  */

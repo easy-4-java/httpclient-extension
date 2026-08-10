@@ -19,7 +19,7 @@ import org.apache.http.protocol.HttpContext;
  * {@code gzip} body, and the response interceptor decodes it back to plain
  * bytes before delivering it to the application.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see HttpRequestInterceptor
  * @see HttpResponseGzipInterceptor

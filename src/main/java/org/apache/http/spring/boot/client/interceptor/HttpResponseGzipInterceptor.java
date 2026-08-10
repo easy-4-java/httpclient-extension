@@ -28,7 +28,7 @@ import org.apache.http.protocol.HttpContext;
  * <p>The first matching codec wins &mdash; if a response advertises both
  * encodings, {@code gzip} is preferred because it is the first one checked.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see HttpResponseInterceptor
  * @see GzipDecompressingEntity

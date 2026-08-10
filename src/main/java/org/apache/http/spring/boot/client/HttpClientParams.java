@@ -17,7 +17,7 @@ import java.util.Locale;
  * case-insensitive lookup from configuration files, where the user might write
  * the parameter in lowercase or mixed case.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public enum HttpClientParams {

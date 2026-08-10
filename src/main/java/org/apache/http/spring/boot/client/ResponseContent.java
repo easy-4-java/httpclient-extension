@@ -18,7 +18,7 @@ import java.util.Map;
  * response handlers. Threads are not required to synchronise access; each
  * thread is expected to use its own instance.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see org.apache.http.HttpResponse
  */

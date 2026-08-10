@@ -38,7 +38,7 @@ import org.apache.http.protocol.HttpContext;
  * {@code requestSentRetryEnabled} is {@code true}, also for non-idempotent
  * requests whose body has already been sent.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see HttpRequestRetryHandler
  */
